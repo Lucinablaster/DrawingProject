@@ -12,6 +12,7 @@
 		F0D20A2A218B73360014E08E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D20A28218B73360014E08E /* Main.storyboard */; };
 		F0D20A2C218B73370014E08E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0D20A2B218B73370014E08E /* Assets.xcassets */; };
 		F0D20A2F218B73370014E08E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D20A2D218B73370014E08E /* LaunchScreen.storyboard */; };
+		F0D20A3A218B7D130014E08E /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D20A39218B7D130014E08E /* DrawingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F0D20A2B218B73370014E08E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0D20A2E218B73370014E08E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0D20A30218B73370014E08E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0D20A39218B7D130014E08E /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			children = (
 				F0D20A28218B73360014E08E /* Main.storyboard */,
 				F0D20A2D218B73370014E08E /* LaunchScreen.storyboard */,
+				F0D20A39218B7D130014E08E /* DrawingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0D20A3A218B7D130014E08E /* DrawingView.swift in Sources */,
 				F0D20A27218B73360014E08E /* ViewController.swift in Sources */,
 				F0D20A25218B73360014E08E /* AppDelegate.swift in Sources */,
 			);
@@ -305,7 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DrawingProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DrawingProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,7 +326,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DrawingProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DrawingProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
