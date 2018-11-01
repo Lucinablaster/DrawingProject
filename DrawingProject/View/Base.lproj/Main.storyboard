@@ -26,7 +26,7 @@
                                     <segue destination="9mf-VI-gEK" kind="show" id="HO4-9T-eTV"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CMe-Xl-ibr">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CMe-Xl-ibr" customClass="DrawingView" customModule="DrawingProject" customModuleProvider="target">
                                 <rect key="frame" x="67" y="68" width="243" height="454"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.14181588228051945" green="0.4116980079531215" blue="1" alpha="0.72491197183098588" colorSpace="custom" customColorSpace="sRGB"/>

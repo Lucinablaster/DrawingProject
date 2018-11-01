@@ -16,6 +16,9 @@ class DrawingView: UIView {
     public override func draw(_ rect: CGRect) -> Void
     {
         // Drawing code
+        createStickFigure().stroke()
+        drawTurlte()
+        drawYourMom()
     }
  
     private func createStickFigure() -> UIBezierPath
@@ -42,6 +45,30 @@ class DrawingView: UIView {
         
         
         return figure
+    }
+    
+    private func drawTurlte() -> Void
+    {
+        let logo = UIBezierPath()
+        UIColor.white.setFill()
+        logo.move(to: CGPoint(x: 50, y: 250))
+        logo.addLine(to: CGPoint(x: 100, y: 300))
+        logo.addLine(to: CGPoint(x: 50, y: 350))
+        logo.close()
+        logo.fill()
+    }
+    
+    
+    private func drawYourMom() -> Void
+    {
+        let logo = UIBezierPath()
+        UIColor.white.setFill()
+        logo.move(to: CGPoint(x: 50, y: 100))
+        logo.addLine(to: CGPoint(x:50, y: 150))
+        logo.addLine(to: CGPoint(x: 100, y: 150))
+        logo.addLine(to: CGPoint(x: 100, y: 100))
+        logo.close()
+        logo.fill()
     }
 
 }
