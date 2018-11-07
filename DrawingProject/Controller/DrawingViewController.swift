@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DrawingViewController.swift
 //  DrawingProject
 //
 //  Created by Baugh, Tyler on 11/1/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DrawingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
