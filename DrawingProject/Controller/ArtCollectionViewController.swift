@@ -84,14 +84,26 @@ class ArtCollectionViewController: UICollectionViewController
     {
         return creativeCS.count
     }
-
-    public override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
-    {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+//
+  //  public override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    //{
+      //  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
     
         // Configure the cell
     
-        return cell
+        //return cell
+   // }
+    
+    public override func collectionView(_ collectionView: UICollectionView,
+                                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
+        let artCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtCell
+        
+        artCell.backgroundColor = .blue
+        artCell.artImage.image = creativeCS[indexPath.row]
+        artCell.artLabel.text = labels[indexPath.row]
+        
+        return artCell
     }
 
     // MARK: UICollectionViewDelegate
